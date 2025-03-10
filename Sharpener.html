@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sharpener_School</title>
+   
+    
+  <style>
+    table td#col1,th#col1 { background-color:rgb(44, 184, 240); color:white;}  
+    table td#col1a { background-color:rgba(173, 226, 241, 0.945); color:black;}
+    table td#col2,th#col2 { background-color:rgb(133, 206, 23); color:black;}
+    table td#col2a { background-color:rgba(196, 240, 179, 0.945); color:black;}
+    table td#col3,th#col3 { background-color:yellow; color:black;}
+    table td#col3a { background-color:rgb(241, 241, 141); color: black;}
+    div p#g1 {color:rgb(168, 168, 168);}
+    div #ok {background-color:rgb(236, 233, 233);}
+
+    div #colb1{ color:white;border:none; background-color:rgb(66, 216, 191);}
+    div #colb2{ color:gray;border: none; background-color:white;}
+    div #colb3{ color:gray;border: none; background-color:rgb(235, 235, 235);}
+    div #colb4{ color:white;border: none; background-color:rgb(51, 167, 99);}
+
+    div #col4 { text-align: center;background-color:rgb(44, 184, 240);color:white;}
+    div #col5 { text-align: center;background-color:rgb(133, 206, 23);color:white;}
+
+    div #col5a { text-align: center;background-color:rgb(243, 226, 77);color:black;}
+
+    table { border-collapse: collapse;}
+    td { text-align: center;}
+    td:first-child { text-align: left;}
+
+    h1 { 
+      font-weight: bold;
+      color:rgba(255, 174, 0, 0.842);
+    }
+    p2,h0 {
+      font-size:20px;
+      color:rgba(247, 212, 14, 0.986);
+    }
+    p0,p1{
+      font-size:20px;
+      color:white;
+    }
+    table, th, td {
+      border-collapse: collapse;
+      padding: 0.25em 0.5em;
+      border: 1px solid #000000;
+      width: 90%;
+
+    }
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    .outer0{
+      margin:3vh;
+      padding:5vh;
+      font-weight: lighter;
+      text-indent: center;
+    }
+    .outer1 {
+      margin:3vh;
+      padding:5vh;
+      text-indent: center;
+    }
+    .outer2 {
+      margin:3vh;
+      padding:5vh;
+      font-weight: lighter;
+      text-indent: center;
+      width:60%
+    }
+    .outer4 {
+      margin:3vh;
+      padding:5vh;
+      font-weight: lighter;
+      text-indent: center;  
+      font-size:60px;
+    }
+    .outer5 {
+      margin:3vh;
+      padding:5vh;
+      text-indent: center;  
+    }
+    * { box-sizing: border-box;}
+    h2 {
+      color:white;
+      text-align: center;
+    }
+    h3 {
+    color:black;
+    text-align: center;
+    }
+    .column {
+      float: left;
+      width: 30%;
+      padding: 10px;
+      height: 100px; 
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    #right {
+      width:50%;
+      float:right;
+      margin:0 auto;
+    }
+    #left {
+      width:50%;
+      float:left;
+      margin:0 auto;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <img src="Sharpener images/Banner01.jpg" alt="Snow" width = "100%" height = "1300" alt ="Banner_image">
+      <div class="centered"><h0 style="font-size:190px">Learning Analysis <a style="font-size:80px"> for </a>  </h0> 
+        <p1 style="font-size:70px"><br>Teachers and Administrators</p1><br>
+        <p2 style="font-size:70px">Rayan International, Sanpada</p2><br>
+        <p id="g1" style="font-size:60px">GRADE <p1 style="font-size:60px;">VI</p1><br>SUBJECT <p1 style="font-size:60px;">Science</p1><br>Academic <p1 style="font-size:60px;"> 2020</p1></p>
+      </div>
+    </div>   
+  </body>
+
+  <body>
+    <div class ="outer0"> 
+      <h1 style="font-size:150px">Note for Teachers and Administrators</h1>
+      <p style="font-size:60px">The TCS Sharpener Learning Analysis Report is intended for teachers and school administrators.This report provides an aggregate view of the performance of students in a subject and can be used by school teachers and administrators for effective planning and monitoring learning of students learning.Teachers and school administrators can use this report to understand the performance of students at various levels of granularity, from overall subject level all the way to question level</p>
+      <p style="font-size:60px">The indicators for each performance level, can be interpreted as follows:</p><br>
+      <img src ="Sharpener images/Pencil.png"width = "4500" height = "2000" alt ="Banner_image" />
+    </div>
+
+    <div class ="outer1">
+      <h1 style="font-size:150px">Subject Dashboard</h1>
+      <p3 style="font-size:60px">Total Number of Student:<b>150</b></p3><br><br><br>
+
+      <table>
+        <thead>
+          <tr> 
+            <th id="col1" rowspan="0"style="font-size:60px">Topic</th>
+            <th id="col2"colspan="2"style="font-size:60px">Completion Rate</th>
+            <th id="col3"colspan="2"style="font-size:60px">Performance Levels</th>
+            <td id="col1"rowspan="0"style="font-size:60px">Performance Gains</td>
+          </tr>
+          <tr>
+            <th id="col2"style="font-size:60px">Attempt 1 </th>
+            <th id="col2"style="font-size:60px">Attempt 2 </th>
+            <th id="col3"style="font-size:60px">Attempt 1 </th>
+            <th id="col3"style="font-size:60px">Attempt 2 </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="col1a" style="font-size:60px">1.Exponents and Decimal System</td>
+            <td  style="font-size:60px" style="text-align:center">100%</td>
+            <td style="font-size:60px" >100%</td>
+            <td style="font-size:60px"><img src ="Sharpener images/Level_002.png" width = "100%"></td>
+            <td style="font-size:60px"><img src ="Sharpener images/Level_004.png" width = "100%"></td>
+            <td id="col1a"style="font-size:60px"><img src ="Sharpener images/Positive.png" width = "30%"></td>
+          </tr>
+
+          <tr>
+            <td style="font-size:60px">2.The laws of Exponents & Examples of using the Laws of Exponents</td>
+            <td id="col2a"id="col2a"style="font-size:60px">100%</td>
+            <td id="col2a"style="font-size:60px">100%</td>
+            <td id ="col3a"style="font-size:60px"><img src ="Sharpener images/Level_002.png" width = "100%"></td>
+            <td id ="col3a"style="font-size:60px"><img src ="Sharpener images/Level_003.png" width = "100%"></td>
+            <td style="font-size:60px"><img src ="Sharpener images/Positive.png" width = "30%"></td>
+          </tr>
+
+          <tr>
+            <td id="col1a"style="font-size:60px">3.Expression Large Numbers in the Standrad Form</td>
+            <td style="font-size:60px">100%</td>
+            <td style="font-size:60px">80%</td>
+            <td style="font-size:60px"><img src ="Sharpener images/Level_003.png" width = "100%"></td>
+            <td style="font-size:60px"><img src ="Sharpener images/Level_003.png" width = "100%"></td>
+            <td id="col1a"style="font-size:60px"><img src ="Sharpener images/Neutral_01.png" width = "30%"></td>
+          </tr>
+
+          <tr>
+              <td style="font-size:60px">4.Expression Large Numbers in the Standard Form</td>
+              <td id="col2a"style="font-size:60px">80%</td>
+              <td id="col2a"style="font-size:60px">10%</td>
+              <td id ="col3a"style="font-size:60px"><img src ="Sharpener images/Level_003.png" width = "100%"></td>
+              <td id ="col3a"style="font-size:60px"><img src ="Sharpener images/Level_001.png" width = "100%"></td>
+              <td style="font-size:60px"><img src ="Sharpener images/Negative_01.png" width = "30%"></td>
+          </tr>
+
+          <tr>
+            <td id="col1a"style="font-size:60px">5.Topic Name</td>
+            <td style="font-size:60px">40%</td>
+            <td style="font-size:60px"><b>-<b></td>
+            <td style="font-size:60px"><img src ="Sharpener images/Level_001.png" width = "100%"></td>
+            <td style="font-size:60px"><b>-<b></b></td>
+            <td id="col1a"style="font-size:60px"><b>-<b></b></td>
+          </tr>
+
+          <tr>
+            <td style="font-size:60px">6.Toic Name</td>
+            <td id="col2a"style="font-size:60px"></td>
+            <td id="col2a"style="font-size:60px"></td>
+            <td id ="col3a"style="font-size:60px"></td>
+            <td id ="col3a"style="font-size:60px"></td>
+            <td style="font-size:60px"></td>
+          </tr>
+
+          <tr>
+            <td id="col1a"style="font-size:60px">7.Topic Name</td>
+            <td style="font-size:60px"></td>
+            <td style="font-size:60px"></td>
+            <td style="font-size:60px"></td>
+            <td style="font-size:60px"></td>
+            <td id="col1a"style="font-size:60px"></td>
+          </tr>
+
+          <tr>
+            <td id="col1"style="font-size:80px">Average</td>
+            <td id="col2"style="font-size:60px">87%</td>
+            <td id="col2"style="font-size:60px">73%</td>
+            <td id="col3"style="font-size:60px"><img src ="Sharpener images/Level_002.png" width = "100%"></td>
+            <td id="col3"style="font-size:60px"><img src ="Sharpener images/Level_003.png" width = "100%"></td>
+            <td id="col1"style="font-size:60px"><img src ="Sharpener images/Positive.png" width = "30%"></td>
+          </tr>
+
+        </tbody>
+      </table><br><br><br>
+
+      <h style="font-size:80px"><b>Notes</b></h>
+      <ul> 
+        <li style="font-size:80px"><b>Completion Rate: </b>Percentage of students who have completed this attempt for this attempt</li>
+        <li style="font-size:80px"><b>Performance Level: </b>Average performance level of students who have attempted this topic </li>
+        <li style="font-size:80px"><b>Performance Trend: </b>Understand change in performance level between two attempts</li>
+      </ul>
+    </div>
+
+    <div class ="outer2">
+      <h1 style="font-size:150px">Topic Dashboard</h1>
+      <label for ="name"style="font-size:60px">Select Topic:</label>
+      <select name="languages" style="font-size:60px" id ="ok">
+        <option value="Exponents and Decimal System">Powers and Exponents</option>
+        <option value="The laws of Exponents & Examples of using the Laws of Exponents">The laws of Exponents</option>
+        <option value="Expression Large Number in the Standard Form">Expression Large Number</option>
+      </select><br><br>
+
+      <div id="left">
+        <p style="font-size:60px">Assessment Completion Rate</p>
+        <div class="column" style="background-color:rgb(44, 184, 240);">
+          <h2 style="font-size:40px">Attempt 1</h2>
+        </div>
+        <div class="column" style="background-color:rgb(44, 184, 240);">
+          <h2 style="font-size:40px">Attempt 2</h2>
+        </div>
+        <div class="column" ></div>
+        <div class="column" style="background-color:rgba(173, 226, 241, 0.945);">
+          <h3 style="font-size:40px">100%</h3>
+        </div><br>
+        <div class="column" style="background-color:rgba(173, 226, 241, 0.945);">
+          <h3 style="font-size:40px">80%</h3>
+        </div>
+      </div>
+  
+      <div id="right">
+        <p style="font-size:60px">Overall Performance</p>
+        <div class="column" style="background-color:rgb(44, 184, 240);">
+          <h2 style="font-size:40px">Attempt 1</h2>
+        </div>
+        <div class="column" style="background-color:rgb(44, 184, 240);">
+          <h2 style="font-size:40px">Attempt 2</h2>
+        </div>
+        <div class="column" style="background-color:rgb(44, 184, 240);">
+          <h2 style="font-size:40px">Gains</h2>
+        </div>
+        <div class="column" style="background-color:rgba(173, 226, 241, 0.945);">
+          <img src ="Sharpener images/Level_003.png" width = "50%">
+        </div>
+        <div class="column" style="background-color:rgba(173, 226, 241, 0.945);">
+          <img src ="Sharpener images/Level_004.png" width = "50%">
+        </div><br>
+        <div class="column" style="background-color:rgba(173, 226, 241, 0.945);">
+          <img src ="Sharpener images/Positive.png"width = "20%"></img>
+        </div>
+      </div>
+    </div><br><br><br><br>
+
+    <div class="outer4">
+      <h >Concept and Application Wise Performance:</h><br><br><br><br>
+      <table>
+        <tr> 
+          <th id="colb1" rowspan="0">Concepts and Applications</th>
+          <th id="colb1"colspan="0">Attempt 1</th>
+          <th id="colb1"colspan="0">Attempt 2</th>
+          <td id="colb1"rowspan="0">Gains</td>
+        </tr>
+
+        <tbody>
+          <tr>
+            <td id="colb2">Exponents and Decimal System</td>
+            <td id="colb2"> <img src ="Sharpener images/Level_002.png" width = "60%"></td>
+            <td id ="colb2"> <img src ="Sharpener images/Level_004.png" width = "100%"></td>
+            <td id="colb2"> <img src ="Sharpener images/Positive.png" width = "60%"></td>
+          </tr>
+
+          <tr>
+            <td id="colb3">Exponents and Decimal System Exponents and Decimal System</td>
+            <td id ="colb3"><img src ="Sharpener images/Level_003.png" width = "60%"></td>
+            <td id ="colb3"><img src ="Sharpener images/Level_004.png" width = "100%"></td>
+            <td id="colb3"><img src ="Sharpener images/Positive.png" width = "60%"></td>
+          </tr>
+
+          <tr>
+            <td id ="colb2">Expression Large Numbers in the Standard Form</td>
+            <td id ="colb2"><img src ="Sharpener images/Level_003.png" width = "60%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Level_002.png" width = "100%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Negative_01.png" width = "60%"></td>
+          </tr>
+        </tbody>
+      </table><br>
+
+      <h >Learning Indicator Wise Performance:</h><br><br>
+      <table>
+        <tr> 
+          <th id="colb4" rowspan="0">Concept</th>
+          <th id="colb4"colspan="0">Attempt 1</th>
+          <th id="colb4"colspan="0">Attempt 2</th>
+          <td id="colb4"rowspan="0">Gains</td>
+        </tr>
+        
+        <tbody>
+          <tr>
+            <td id="colb2">Identifies the correct from (e.g.34) given a repeated product</td>
+            <td id="colb2"><img src ="Sharpener images/Level_002.png" width = "60%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Level_004.png" width = "100%"></td>
+            <td id="colb2"><img src ="Sharpener images/Positive.png" width = "60%"></td>
+          </tr>
+
+          <tr>
+            <td id="colb3">Identifies the correct repeated product given an exponent form</td>
+            <td id ="colb3"><img src ="Sharpener images/Level_003.png" width = "60%"></td>
+            <td id ="colb3"><img src ="Sharpener images/Level_004.png" width = "100%"></td>
+            <td id="colb3"><img src ="Sharpener images/Positive.png" width = "60%"></td>
+          </tr>
+
+          <tr>
+            <td id ="colb2">Identifies correct espansion of a multi-digit number as using powers of the tent</td>
+            <td id ="colb2"><img src ="Sharpener images/Level_003.png" width = "60%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Level_003.png" width = "100%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Neutral_01.png" width = "60%"></td>
+          </tr> 
+
+          <tr>
+            <td id="colb3">Locates he odd one involving the product of two exponent forms with the same bases</td>
+            <td id ="colb3"><img src ="Sharpener images/Level_003.png" width = "60%"></td>
+            <td id ="colb3"><img src ="Sharpener images/Level_004.png" width = "100%"></td>
+            <td id="colb3"><img src ="Sharpener images/Positive.png" width = "60%"></td>
+          </tr>
+
+          <tr>
+            <td id ="colb2">Identifies correct prime factorization</td>
+            <td id ="colb2"><img src ="Sharpener images/Level_003.png" width = "60%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Level_002.png" width = "100%"></td>
+            <td id ="colb2"><img src ="Sharpener images/Negative_01.png" width = "60%"></td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h1 style="font-size:150px" id="top"><br><br>Questions Dashboard</h1>
+      <label for ="name">Select Topic:</label>
+      <select name="languages" style="font-size:60px" id ="ok">
+        <option value="Exponents and Decimal System">Powers and Exponents</option>
+        <option value="The laws of Exponents & Examples of using the Laws of Exponents">The laws of Exponents</option>
+        <option value="Expression Large Number in the Standard Form">Expression Large Number</option>
+      </select>
+      
+      <pre class="tab" style="font-size:80px">&#129001;100%      &#x1F7E8;75%     &#128999;50%     &#128997;25%     &#128073;Student Response     &#10003; Correct Response</pre>
+ 
+      <table >
+        <thead>
+          <tr > 
+            <th id="col4" rowspan="0">Question #</th>
+            <th id="col4"rowspan="0">% Learners Who Got this Right</th>
+            <td id="col4"rowspan="0">View Question Details</td>
+            <td id="col5"colspan="4">Option Analysis<br>(%of Students Who Chose This Incorrect ,√ indicates a right option)</td>
+          </tr>
+
+          <tr>
+            <th id="col5a">A</th>
+            <th id="col5a">B</th>
+            <th id="col5a">C</th>
+            <th id="col5a">D</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="col6" style="text-align:center">1</td>
+            <td id="col5a"></td>
+            <td ><a href="Question1.html">view</td>
+            <td>√</td>
+            <td ></td>
+            <td ></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td id="col1a"style="text-align:center">2</td>
+            <td id="col5"></td>
+            <td id="col1a"><a href="Question2.html">view</td>
+            <td id="col2a"></td>
+            <td id="col2a">√</td>
+            <td id="col2a"></td>
+            <td id="col2a"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">3</td>
+            <td"></td>
+            <td style="background-color:rgb(240, 158, 64)"></td>
+            <td ><a href="Question3.html">view</td>
+            <td ></td>
+            <td >√</td>
+            <td ></td>
+            <td ></td>
+          </tr>
+
+          <tr>
+            <td id="col1a" style="text-align:center">4</td>
+            <td style="background-color: rgb(233, 62, 62);"></td>
+            <td id="col1a"><a href="Question4.html">view</td>
+            <td id="col2a"></td>
+            <td id="col2a"></td>
+            <td id="col2a"></td>
+            <td id="col2a">√</td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center">5</td>
+            <td id="col5"></td>
+            <td ><a href="Question5.html">view</td>
+            <td ></td>
+            <td ></td>
+            <td >√</td>
+            <td ></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

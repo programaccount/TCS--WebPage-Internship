@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question1</title>
+    </head>
+
+    <style> 
+        p,h,myBtn {
+            margin:1vh;
+            padding:1vh;
+            font-size:70px;
+        }
+        input[type="radio"] {
+            position: relative;
+            width: 2%;
+            height: 3rem;
+        }
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1;
+            left: -7%;
+            top: 45%;
+            width: 80%; 
+            height: 80%;
+            overflow: auto;
+        }
+        .modal-content {
+            background-color: lightblue;
+            margin: auto;
+            padding: 10px;
+            border: 2px solid black;
+            width: 80%;
+        }
+        .close {
+            color: white;
+            float: right;
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .close:hover,.close:focus {
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <h>Q1.The following sentence has been divided in three parts. One of them may be incorrect.Choose the incorrect part from the given options 1,2, or 3.If three is no error,mark 4.</h>
+
+        <form>
+            <p>Mohak had/ a bad cold /and then he got fever./ No error.</p>
+            <p>1.<input type="radio" name="coding" id="" value="Mohak had">Mohak had</p>
+            <p>2.<input type="radio" name="coding" id="" value ="a bad cold">a bad cold</p>
+            <p>3.<input type="radio" name="coding" id="" value ="and then he got fever.">and then he got fever.</p>
+            <p>4.<input type="radio" name="coding" id="" value="No error">No error</p>
+        </form>
+
+        <button  Style="font-size:60px" id="myBtn">Explanation..</button>
+        <h> <a href="Sharpener.html#question_dashboard" Style="text-align:right"><br>Go to Questions Dashboard</a> </h><div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Here 'a' is to be used before the adjective 'bad' as the sentece says 'Mohak had a bad cold'.<br><br>Indefinite article 'a' to be used before the adjective 'bad' in the given contex..<br><br>No error.If the learner selects this opt. it will be wrong <br><br><b>Learning Insight:</b><br>Indefinite article 'a' to be used before the adjective 'bad' in the given context...</div></p>
+        </div>
+
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+        
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
